@@ -6,7 +6,7 @@
     <title>AMN</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield,bolt,code,travel"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shield,bolt,code,travel,vital_signs"
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -35,22 +35,45 @@
       </div>
       <div class="content">
         <div class="content-button">
-        <button class="icon-button">
-          <span class="material-symbols-outlined"> bolt </span>
-          <span>New Brief</span>
-        </button>
-         <button class="icon-button">
-          <span class="material-symbols-outlined"> code </span>
-          <span>Decode</span>
-        </button>
-         <button class="icon-button">
-          <span class="material-symbols-outlined"> travel </span>
-          <span>Request Drone</span>
-        </button>
+          <button class="icon-button">
+            <span class="material-symbols-outlined"> bolt </span>
+            <span>New Brief</span>
+          </button>
+          <button class="icon-button">
+            <span class="material-symbols-outlined"> code </span>
+            <span>Decode</span>
+          </button>
+          <button class="icon-button">
+            <span class="material-symbols-outlined"> travel </span>
+            <span>Request Drone</span>
+          </button>
         </div>
-
       </div>
-      <div class="footer"><h4>Footer</h4></div>
+      <div class="content2">
+        <div class="cards">
+          <div class="task-card">
+            <div class="line-card">
+              <div class="state-card-critical">CRITICAL</div>
+              <p>In Progress</p>
+            </div>
+            <p>Operation Nightfall</p>
+            <progress id="progress-bar" value="70" max="100">70 %</progress>
+          </div>
+        </div>
+      </div>
+      <div class="content3">
+        <div class="state-card">
+          <div class="point">•</div>
+          <div class="text">THREAT DETECTED</div>
+          <div></div>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="material-symbols-outlined"> vital_signs </span>
+          <p>Dashboard</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

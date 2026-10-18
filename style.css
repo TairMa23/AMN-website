@@ -56,6 +56,8 @@ body {
         "header "
         "menu "
         "content "
+        "content2 "
+        "content3 "
         "footer ";
 
     background-color: #0E0E13;
@@ -96,18 +98,22 @@ body {
 
 .menu-card-content h1 {
     color: #03D439;
-
 }
 
 .menu-card-content p {
     color: #575462;
-
 }
 
 .container div.content {
     grid-area: content;
+}
 
+.container div.content2 {
+    grid-area: content2;
+}
 
+.container div.content3 {
+    grid-area: content3;
 }
 
 .content-button {
@@ -202,4 +208,49 @@ body {
     outline: 3px solid #93c5fd;
     /* Accessibility focus ring */
     outline-offset: 2px;
+}
+.cards{
+      display: flex;
+       gap: 20px;
+}
+.task-card {
+    /* width: fit-content; */
+    border-style: solid;
+    border-color: #1C1B25;
+    /* Aesthetics */
+    border-left-color: #2FB757;
+    background-color: #16121E;
+    color: #A09FAA;
+
+    border-radius: 24px;
+}
+
+.line-card {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.state-card-critical {
+    display: inline-flex;
+    background-color: #43182C;
+    border-style: solid;
+    border-color: #A42E54;
+    color: #A42E54;
+    border-radius: 8px;
+}
+
+.line-card p {
+    color: #575462;
+}
+
+.state-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #43182C;
+    border-style: solid;
+    border-color: #A42E54;
+    color: #A42E54;
+    border-radius: 8px;
 }
