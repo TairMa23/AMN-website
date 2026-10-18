@@ -170,8 +170,17 @@ body {
      padding: 4px;
 }
 .material-symbols-outlined:hover{
-   box-shadow: 1px 1px 10px 10px rgba(20, 175, 95, 0.3)
+   box-shadow: 1px 1px 10px 10px rgba(20, 175, 95, 0.3);
+    animation: spin 0.5s linear infinite; 
+}
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg); 
+  }
 }
 .icon-button {
     /* Layout & Alignment */
