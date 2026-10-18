@@ -163,7 +163,16 @@ body {
         transform: rotate(360deg);
     }
 }
+.material-symbols-outlined{
+    color: #09090E;
+   background-color: #03D439;
+     border-radius: 24px;
+     padding: 4px;
+}
+.material-symbols-outlined:hover{
+   box-shadow: 1px 1px 10px 10px rgba(20, 175, 95, 0.3)
 
+}
 .icon-button {
     /* Layout & Alignment */
     display: inline-flex;
@@ -210,6 +219,10 @@ body {
     /* Accessibility focus ring */
     outline-offset: 2px;
 }
+.bar p{
+    color: #03D439  ;
+}
+
 .cards{
       display: flex;
        gap: 20px;
@@ -232,7 +245,7 @@ body {
     justify-content: space-between;
      align-items: center;
      text-align: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .state-card-critical {
@@ -243,7 +256,19 @@ body {
     color: #A42E54;
     border-radius: 8px;
 }
-
+.state-card-high {
+   
+    background-color: #423212;
+    border-style: solid;
+    border-color: #C99B2A;
+    color: #C99B2A;
+    border-radius: 8px;
+}
+.bar{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
 .line-card p {
     color: #575462;
 }
