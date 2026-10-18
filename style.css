@@ -123,7 +123,8 @@ body {
 
 .container div.footer {
     grid-area: footer;
-    text-align: center;
+      display: flex;
+    justify-content: space-between;
 }
 
 /* .radar, .sweep { position: absolute; } */
@@ -229,11 +230,13 @@ body {
 
     display: flex;
     justify-content: space-between;
+     align-items: center;
+     text-align: center;
     gap: 20px;
 }
 
 .state-card-critical {
-    display: inline-flex;
+   
     background-color: #43182C;
     border-style: solid;
     border-color: #A42E54;
