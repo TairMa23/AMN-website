@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #0E0E13;
     font-family: Arial, sans-serif;
 }
 
@@ -93,8 +94,16 @@ body {
     border-radius: 16px;
     padding: 16px;
 }
+.menu-card:hover{
+    border-color:  #03D439;
+}
+.icon-button:hover{
+ border-color:  #03D439;
+}
 
-
+.task-card:hover{
+    border-color:  #03D439; 
+}
 
 .menu-card-content h1 {
     color: #03D439;
@@ -163,13 +172,13 @@ body {
         transform: rotate(360deg);
     }
 }
-.material-symbols-outlined{
+.my-special-icon{
     color: #09090E;
    background-color: #03D439;
      border-radius: 24px;
      padding: 4px;
 }
-.material-symbols-outlined:hover{
+.my-special-icon:hover{
    box-shadow: 1px 1px 10px 10px rgba(20, 175, 95, 0.3);
     animation: spin 0.5s linear infinite; 
 }
