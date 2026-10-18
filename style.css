@@ -11,7 +11,7 @@ body {
     background-color: #09090E;
     padding: 0.5em 1em;
     color: #03D439;
-  box-shadow: 0 2px 2px 0 rgba(211, 206, 206, 0.2), 0 6px 20px 0 rgba(242, 238, 238, 0.19);
+    box-shadow: 0 2px 2px 0 rgba(211, 206, 206, 0.2), 0 6px 20px 0 rgba(242, 238, 238, 0.19);
 }
 
 .btn-49 {
@@ -81,6 +81,8 @@ body {
 }
 
 .menu-card {
+    border-style: solid;
+    border-color: #1C1B25;
     background-color: #16121E;
     display: flex;
     justify-content: space-between;
@@ -94,15 +96,23 @@ body {
 
 .menu-card-content h1 {
     color: #03D439;
-    
+
 }
 
 .menu-card-content p {
     color: #575462;
-    
+
 }
+
 .container div.content {
     grid-area: content;
+
+
+}
+
+.content-button {
+    display: flex;
+    gap: 8px;
 }
 
 .container div.footer {
@@ -145,4 +155,51 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.icon-button {
+    /* Layout & Alignment */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Spacing between icon and text */
+
+    /* Sizing & Padding */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+
+    border-style: solid;
+    border-color: #1C1B25;
+    /* Aesthetics */
+    background-color: #16121E;
+    color: #A09FAA;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Control icon size independently */
+.icon-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Interactive States */
+.icon-button:hover {
+    background-color: #7385b7;
+    /* Darker Blue */
+}
+
+.icon-button:active {
+    transform: scale(0.98);
+    /* Slight click feedback */
+}
+
+.icon-button:focus-visible {
+    outline: 3px solid #93c5fd;
+    /* Accessibility focus ring */
+    outline-offset: 2px;
 }
